@@ -7,4 +7,7 @@ const countWords = () => {
       return acc
     }, {})
   )
+    .replace(/[, ]+/g, " ")
+    .replace(/['"]+/g, "")
+    .replace(/[{}]+/g, "")
 }
